@@ -10,7 +10,9 @@
     --Dark-blue: hsl(223, 47%, 23%);
 }
 body{
+    background-image: url(../images/pattern-background-desktop.svg);
     background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     justify-content: center;
