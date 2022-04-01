@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    background-color: var(--Pale-blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: white;
+    border-radius: 13px;
+    font-size: 16px;
+    text-align: center;
+    width: 25%;
+    box-shadow:  0 0 7px 0px var(--Dark-blue);
+}
+header img{
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+}
+article{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+h1{
+    color: var(--Dark-blue);
+}
+article h1 + p{
+    color: var(--Desaturated-blue);
+}
+section{
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+section .music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .music img{
+    padding-right: 15px;
+}
+h4{
+    color: var(--Dark-blue);
+    margin-bottom: 0;
+}
+h4 + p{
+    color: var(--Desaturated-blue);
+    margin-top: 5px;
+}
+button{
+    margin-top: 28px;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--Bright-blue);
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 5px 12px -2px var(--Bright-blue);
+}
+button + p{
+    color: var(--Desaturated-blue);
+    padding: 10px;
+}
+@media only screen and (max-width: 376px) {
+    main{
+        width: 93%;
+    }
+}
